@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-09T13:55:17 PDT" name="Default suite" finished-at="2023-08-09T13:55:18 PDT" duration-ms="871">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@2e6a8155]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-08-09T13:55:17 PDT" name="Default test" finished-at="2023-08-09T13:55:18 PDT" duration-ms="871">
+      <class name="Runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@2e6a8155]" started-at="2023-08-09T13:55:17 PDT" name="setUpClass" finished-at="2023-08-09T13:55:18 PDT" duration-ms="634" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@31500940]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@2e6a8155]" started-at="2023-08-09T13:55:18 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-09T13:55:18 PDT" duration-ms="166" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["The User is on frontPage and clicks get Started to navigate to Home page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Testing get started page of the DS algo application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "StepDefinition.FrontPage_SD.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "StepDefinition.FrontPage_SD.driver" is null
+at StepDefinition.FrontPage_SD.the_user_opens_ds_algo_portal_link(FrontPage_SD.java:37)
+at ✽.The user opens DS Algo portal link(file:///C:/Users/cnudr/eclipse-workspace/Ds_algoPOMFramework/src/test/resources/features/FrontPage.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@2e6a8155]" started-at="2023-08-09T13:55:18 PDT" name="tearDownClass" finished-at="2023-08-09T13:55:18 PDT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
